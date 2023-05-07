@@ -15,8 +15,8 @@ public class EmployeeController {
     Iterable<Employee> getAllEmployees(){
         return employeeRepository.findAll();
     }
-    @GetMapping("getAddressById/{id}")
-    Employee getAddressById(@PathVariable Long id){
+    @GetMapping("findAddressById/{id}")
+    Employee findAddressById(@PathVariable Long id){
         return employeeRepository.findById(id).get();
     }
 
